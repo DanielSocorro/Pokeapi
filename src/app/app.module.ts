@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { PokeDetailComponent } from './components/poke-detail/poke-detail.component';
 import { PokeTableComponent } from './components/poke-table/poke-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from 'src/shared/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
