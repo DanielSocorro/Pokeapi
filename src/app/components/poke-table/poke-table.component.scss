@@ -30,16 +30,12 @@ table {
 
 .mat-mdc-row:nth-child(even){
   background-color: $softgray;
-  & .mat-mdc-cell{
-
   }
-}
+
 
 .mat-mdc-row:nth-child(odd){
   background-color: $warmgray;
-  & .mat-mdc-cell{
 
-  }
 }
 
 .mat-mdc-cell::first-letter{
@@ -69,16 +65,4 @@ box-shadow: inset 0 0 0 5px $softgray;
   color: $white;
  }
 
- /* ::ng-deep.mat-mdc-form-field-underline{
-  background-color: $white !important;
- }
 
- ::ng-deep.mat-mdc-form-field-ripple{
-  background-color: $white !important;
- }
-
- input {
-  color: $white !important;
- }
-
- */
