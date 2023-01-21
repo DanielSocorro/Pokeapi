@@ -1,27 +1,27 @@
-# Pokeapi
+# PokeApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+PokeApp es una aplicación de Angular que utiliza la API PokeAPI para mostrar información sobre los Pokémon. Utiliza Angular Materials para el estilado y proporciona una interfaz de usuario amigable para buscar y ver detalles de los Pokémon.
 
-## Development server
+## Instalación
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para configurar y ejecutar PokeApp, siga estos pasos:
 
-## Code scaffolding
+1. Clonar el repositorio: `git clone https://github.com/yourusername/pokeapp.git`
+2. Instalar las dependencias: `npm install`
+3. Iniciar el servidor de desarrollo: `ng serve`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Uso
 
-## Build
+Una vez que la aplicación esté ejecutándose, puede buscar y ver detalles de los Pokémon ingresando el nombre o el número de Pokédex en la barra de búsqueda en la página principal. También puede navegar a través de las páginas de categorías de Pokémon para ver una lista de Pokémon de esa categoría.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Angular Materials
 
-## Running unit tests
+PokeApp utiliza Angular Materials para proporcionar una interfaz de usuario atractiva y fácil de usar. Se utilizan componentes como el cuadro de búsqueda, las tarjetas y los iconos para dar vida a la aplicación.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contribución
 
-## Running end-to-end tests
+¡Contribuir a PokeApp es fácil! Simplemente haga una solicitud de extracción con su función o corrección. Asegúrese de seguir nuestras pautas de estilo y de probar su código antes de enviar su solicitud.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Licencia
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+PokeApp está licenciado bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
