@@ -11,3 +11,19 @@
 .header-image{
   background-size: cover;
 }
+
+.mat-mdc-card-header{
+  background-color: $white;
+  padding-top: 10px;
+  border-radius: 8px;
+}
+
+.mat-mdc-card-title {
+  text-transform: uppercase;
+  color: $black;
+}
+.mat-mdc-card-subtitle {
+  text-transform: uppercase;
+  color: gray;
+}
+
