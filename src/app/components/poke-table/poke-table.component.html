@@ -3,18 +3,19 @@
     <mat-label>Busca tu pokemon</mat-label>
     <input matInput [(ngModel)]="searchText" (keyup)="applyFilter($event)" placeholder="ej pikachu" #input>
 
+
   </mat-form-field>
 
   <div>
     <table mat-table [dataSource]="dataSource" matSort>
 
-      <!-- ID Column -->
+      <!-- N° Column -->
       <ng-container matColumnDef="position">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Nro </th>
         <td mat-cell *matCellDef="let row"> {{row.position}} </td>
       </ng-container>
 
-      <!-- Progress Column -->
+      <!-- Pokemon Column -->
       <ng-container matColumnDef="image">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Pokemon </th>
         <td mat-cell *matCellDef="let row">

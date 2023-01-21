@@ -10,7 +10,7 @@ import { PokemonService } from 'src/app/services/pokemon.service'
   styleUrls: ['./poke-table.component.scss']
 })
 export class PokeTableComponent implements OnInit {
-
+  showDetail = false;
   displayedColumns: string [] = ['position', 'image', 'name'];
   data: any[] = [];
   dataSource = new MatTableDataSource<any>(this.data);
@@ -61,6 +61,7 @@ export class PokeTableComponent implements OnInit {
   }
 
   getRow(row:any) {
+    this.showDetail = true;
     this.router.navigateByUrl(`pokeDetail/${row.position}`);
   }
 }
