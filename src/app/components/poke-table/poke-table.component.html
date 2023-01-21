@@ -1,7 +1,8 @@
 <div class="container">
   <mat-form-field>
     <mat-label>Busca tu pokemon</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="ej pikachu" #input>
+    <input matInput [(ngModel)]="searchText" (keyup)="applyFilter($event)" placeholder="ej pikachu" #input>
+
   </mat-form-field>
 
   <div>

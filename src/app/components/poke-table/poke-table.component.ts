@@ -18,6 +18,7 @@ export class PokeTableComponent implements OnInit {
 
   @ViewChild(MatPaginator, { static: true })
   paginator!: MatPaginator;
+  searchText: any;
 
   constructor(private pokeService: PokemonService, private router: Router) {}
 
@@ -49,8 +50,10 @@ export class PokeTableComponent implements OnInit {
   }
 
   applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    const filterValue = this.searchText;
+
+  this.dataSource.filter = (this.searchText? this.searchText.trim().toLowerCase() : "");
+
 
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
