@@ -1,12 +1,12 @@
 # PokeApi
 
-PokeApi es una aplicación de Angular que utiliza la API PokeAPI para mostrar información sobre los Pokémon. Utiliza Angular Materials para el estilado y proporciona una interfaz de usuario amigable para buscar y ver detalles de los Pokémon.
+PokeApi es una aplicación de Angular que utiliza la API `https://pokeapi.co/` para mostrar información sobre los Pokémon. Utiliza Angular Materials para el estilado y proporciona una interfaz de usuario amigable para buscar y ver detalles de los Pokémon.
 
 ## Instalación
 
 Para configurar y ejecutar PokeApi, siga estos pasos:
 
-1. Clonar el repositorio: `git clone https://github.com/yourusername/pokeapi.git`
+1. Clonar el repositorio: `git clone https://github.com/DanielSocorro/pokeapi.git`
 2. Instalar las dependencias: `npm install`
 3. Iniciar el servidor de desarrollo: `ng serve`
 
