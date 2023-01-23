@@ -16,10 +16,10 @@ export class PokeAlphabetComponent implements OnInit {
 
   ngOnInit() {
     let allPokemons: any[] = [];
-    for (let i = 1; i <= 150; i++) {
+    for (let i = 1; i <= 905; i++) {
       this.pokeService.getPokemons(i).subscribe((pokemon: any) => {
         allPokemons.push(pokemon);
-        if (i === 150) {
+        if (i === 905) {
           this.pokemons = allPokemons;
           for (const pokemon of allPokemons) {
             const firstLetter = pokemon.name[0].toUpperCase();

@@ -20,6 +20,7 @@ La PokeApi se encuentra en despliegue continuo con Netlify, aquí el link `https
 
 Una vez que la aplicación esté ejecutándose, puedes buscar y ver detalles de los Pokémon ingresando el nombre o el número de Pokédex en la barra de búsqueda en la página principal y seleccionandolo. También puede navegar a través de las páginas de Pokémon para ver una lista de Pokémon de esa categoría. La Pokebola en la esquina superior izquerda es el boton home para regresar.
 Debajo de la lista principal esta una pequeña tabla que indica cuantos Pokémon hay por cada letra del abecedario.
+Actualmente trae la información de 905 diferentes Pokémon !!
 
 ## Angular Materials
 
