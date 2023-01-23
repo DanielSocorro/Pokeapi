@@ -8,27 +8,31 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 
 export class PokeAlphabetComponent implements OnInit {
-  letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   counts: { [letter: string]: number } = {};
   pokemons: any = [];
+  letters: string[] = [];
 
   constructor(private pokeService: PokemonService) {}
 
-  ngOnInit(): void {
-    this.getPokemons();
-  }
-  getPokemons() {
-    this.pokeService.getPokemons(1).subscribe((pokemons: number) => {
-
-
-      for (const pokemon of this.pokemons) {
-        const firstLetter = pokemon.name[1].toUpperCase();
-        if (this.counts[firstLetter]) {
-          this.counts[firstLetter]++;
-        } else {
-          this.counts[firstLetter] = 1;
+  ngOnInit() {
+    let allPokemons: any[] = [];
+    for (let i = 1; i <= 150; i++) {
+      this.pokeService.getPokemons(i).subscribe((pokemon: any) => {
+        allPokemons.push(pokemon);
+        if (i === 150) {
+          this.pokemons = allPokemons;
+          for (const pokemon of allPokemons) {
+            const firstLetter = pokemon.name[0].toUpperCase();
+            if (this.counts[firstLetter]) {
+              this.counts[firstLetter]++;
+            } else {
+              this.counts[firstLetter] = 1;
+            }
+          }
+          this.letters = Object.keys(this.counts);
+          this.letters.sort();
         }
-      }
-    });
+      });
+    }
   }
 }
