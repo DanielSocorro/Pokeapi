@@ -14,7 +14,7 @@ Para configurar y ejecutar PokeApi, siga estos pasos:
 
 La PokeApi se encuentra en despliegue continuo con Netlify, aquí el link `https://poketestapi.netlify.app/`
 
-PD: si actualizan en un detalle de 
+
 
 ## Uso
 
