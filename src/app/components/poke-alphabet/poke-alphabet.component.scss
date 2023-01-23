@@ -1,4 +1,30 @@
 table {
-  width: 100%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
   text-align: center;
-}
+  }
+
+  th {
+  background-color: #dddddd;
+  }
+
+  tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+
+  .table-header {
+  font-weight: bold;
+  }
+
+  .table-cell {
+  padding: 10px;
+  }
+
+
+

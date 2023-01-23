@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
-
 @Component({
   selector: 'app-poke-alphabet',
   templateUrl: './poke-alphabet.component.html',
@@ -11,22 +10,25 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 export class PokeAlphabetComponent implements OnInit {
   letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   counts: { [letter: string]: number } = {};
- pokemons: any[] = [];
+  pokemons: any = [];
 
   constructor(private pokeService: PokemonService) {}
 
-  ngOnInit() {
-    this.pokeService.getPokemons(1).subscribe((pokemons: any) => {
-      this.pokemons = pokemons;
-    // Recorrer todos los pokemons y contar cuantos inician con cada letra
-    for (const pokemon of this.pokemons) {
-      const firstLetter = pokemon.name[0].toUpperCase();
-      if (this.counts[firstLetter]) {
-        this.counts[firstLetter]++;
-      } else {
-        this.counts[firstLetter] = 1;
+  ngOnInit(): void {
+    this.getPokemons();
+  }
+  getPokemons() {
+    this.pokeService.getPokemons(1).subscribe((pokemons: number) => {
+
+
+      for (const pokemon of this.pokemons) {
+        const firstLetter = pokemon.name[1].toUpperCase();
+        if (this.counts[firstLetter]) {
+          this.counts[firstLetter]++;
+        } else {
+          this.counts[firstLetter] = 1;
+        }
       }
-    }
-  })
-}
+    });
+  }
 }

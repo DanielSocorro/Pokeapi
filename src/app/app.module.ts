@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { PokeAlphabetComponent } from './components/poke-alphabet/poke-alphabet.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     PokeDetailComponent,
-    PokeTableComponent
+    PokeTableComponent,
+    PokeAlphabetComponent
   ],
   imports: [
     BrowserModule,

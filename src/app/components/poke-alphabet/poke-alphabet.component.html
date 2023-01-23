@@ -2,14 +2,13 @@
   <thead>
     <tr>
       <th>Letra</th>
-      <th>Cantidad</th>
+      <th>Cantidad de Pokemons</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let pokemon of pokemons">
+    <tr *ngFor="let letter of letters">
       <td>{{letter}}</td>
       <td>{{counts[letter]}}</td>
     </tr>
   </tbody>
 </table>
-
