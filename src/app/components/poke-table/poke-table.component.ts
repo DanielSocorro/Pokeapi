@@ -2,7 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { PokemonService } from 'src/app/services/pokemon.service'
+import { PokemonService } from 'src/app/services/pokemon.service';
+
 
 @Component({
   selector: 'app-poke-table',
