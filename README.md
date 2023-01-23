@@ -10,9 +10,15 @@ Para configurar y ejecutar PokeApi, siga estos pasos:
 2. Instalar las dependencias: `npm install`
 3. Iniciar el servidor de desarrollo: `ng serve`
 
+## Deploy en Netlify
+
+La PokeApi se encuentra en despliegue continuo con Netlify, aquí el link `https://poketestapi.netlify.app/`
+
+PD: si actualizan en un detalle de 
+
 ## Uso
 
-Una vez que la aplicación esté ejecutándose, puede buscar y ver detalles de los Pokémon ingresando el nombre o el número de Pokédex en la barra de búsqueda en la página principal. También puede navegar a través de las páginas de categorías de Pokémon para ver una lista de Pokémon de esa categoría.
+Una vez que la aplicación esté ejecutándose, puede buscar y ver detalles de los Pokémon ingresando el nombre o el número de Pokédex en la barra de búsqueda en la página principal y seleccionandolo. También puede navegar a través de las páginas de Pokémon para ver una lista de Pokémon de esa categoría. La Pokebola en la esquina superior izquerda es el boton home para regresar.
 
 ## Angular Materials
 
@@ -22,6 +28,4 @@ PokeApi utiliza Angular Materials para proporcionar una interfaz de usuario atra
 
 ¡Contribuir a PokeApi es fácil! Simplemente haga una solicitud de extracción con su función o corrección. Asegúrese de seguir nuestras pautas de estilo y de probar su código antes de enviar su solicitud.
 
-## Licencia
 
-PokeApi está licenciado bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
