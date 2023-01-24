@@ -1,14 +1,33 @@
-<table>
-  <thead>
-    <tr>
-      <th>Letra</th>
-      <th>Cantidad de Pokémon</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let letter of letters">
-      <td>{{letter}}</td>
-      <td>{{counts[letter]}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-container">
+  <div class="table-section">
+    <table>
+      <thead>
+        <tr>
+          <th>Letra</th>
+          <th>Cantidad de Pokémon</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let letter of letters.slice(0, (letters.length/2))">
+          <td>{{letter}}</td>
+          <td>{{counts[letter]}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-section">
+    <table>
+      <thead>
+        <tr>
+          <th>Letra</th>
+          <th>Cantidad de Pokémon</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let letter of letters.slice((letters.length/2), letters.length)">
+          <td>{{letter}}</td>
+          <td>{{counts[letter]}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
